@@ -22,8 +22,13 @@ with open("./peru.csv") as data:
 print(X_axis)
 print(Y_axis)
 
+
 # Creamos un grafico de barras
+plt.figure("Gráfica")
+
+plt.title("Descenso de la Tasa de Fecundidad en el Perú ( 1960 - 2023 )")
 plt.bar(X_axis, Y_axis)
+
 
 plt.xlabel("Año")
 plt.ylabel("Hijos por mujer")
